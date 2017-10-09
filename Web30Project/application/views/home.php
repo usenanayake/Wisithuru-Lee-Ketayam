@@ -52,6 +52,7 @@
           </ul>
         </div>
       </div>
+      <a href="<?php echo site_url('Users/Login') ?>"><button style="margin-right: 5%">Login</button></a>
     </nav>
 
     <header class="masthead">
