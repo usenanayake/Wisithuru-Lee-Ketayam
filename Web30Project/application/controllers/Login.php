@@ -32,7 +32,7 @@ public function LoginUser(){
                           redirect('Admin/index');
                        }else{
                           $this->session->set_flashdata('errmsg','login not sucess');
-                          redirect('Welcome');
+                          redirect('Users');
                        }
                 }
 }
@@ -44,11 +44,8 @@ public function LogoutUser(){
   $this->session->unset_userdata('lname');
   $this->session->unset_userdata('email');
   $this->session->unset_userdata('loggedin');
-  redirect('Users/Login');
+  redirect('Welcome');
 }
 
-// public function LogoutUser(){
 
-//   redirect('Users/Login');
-// }
 }

@@ -52,6 +52,7 @@
           </ul>
         </div>
       </div>
+      <a href="<?php echo site_url('Register/RegisterUser') ?>"><button style="margin-right: 5%">Signup</button></a>
       <a href="<?php echo site_url('Users/Login') ?>"><button style="margin-right: 5%">Login</button></a>
     </nav>
 
@@ -126,8 +127,8 @@
       <div class="container-fluid">
         <div class="row no-gutter popup-gallery">
           <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/1.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/1.jpg" alt="">
+            <a class="portfolio-box" href="<?php echo base_url()?>img/portfolio/fullsize/1.jpg">
+              <img class="img-fluid" src="<?php echo base_url()?>img/portfolio/thumbnails/1.jpg" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
@@ -141,8 +142,8 @@
             </a>
           </div>
           <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/2.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/2.jpg" alt="">
+            <a class="portfolio-box" href="<?php echo base_url()?>img/portfolio/fullsize/2.jpg">
+              <img class="img-fluid" src="<?php echo base_url()?>img/portfolio/thumbnails/2.jpg" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
@@ -156,8 +157,8 @@
             </a>
           </div>
           <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/3.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/3.jpg" alt="">
+            <a class="portfolio-box" href="<?php echo base_url()?>img/portfolio/fullsize/3.jpg">
+              <img class="img-fluid" src="<?php echo base_url()?>img/portfolio/thumbnails/3.jpg" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
@@ -171,8 +172,8 @@
             </a>
           </div>
           <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/4.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/4.jpg" alt="">
+            <a class="portfolio-box" href="<?php echo base_url()?>img/portfolio/fullsize/4.jpg">
+              <img class="img-fluid" src="<?php echo base_url()?>img/portfolio/thumbnails/4.jpg" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
@@ -186,8 +187,8 @@
             </a>
           </div>
           <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/5.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/5.jpg" alt="">
+            <a class="portfolio-box" href="<?php echo base_url()?>img/portfolio/fullsize/5.jpg">
+              <img class="img-fluid" src="<?php echo base_url()?>img/portfolio/thumbnails/5.jpg" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
@@ -201,8 +202,8 @@
             </a>
           </div>
           <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/6.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/6.jpg" alt="">
+            <a class="portfolio-box" href="<?php echo base_url()?>img/portfolio/fullsize/6.jpg">
+              <img class="img-fluid" src="<?php echo base_url()?>img/portfolio/thumbnails/6.jpg" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
