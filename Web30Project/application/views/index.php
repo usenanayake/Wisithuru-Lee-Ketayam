@@ -14,7 +14,7 @@
 <td>price</td>
 <td>Qty</td>
 <td>Description</td>
-<td>Buy Now</td>
+
 
 
 </tr>
@@ -27,18 +27,20 @@ foreach($result as $p){
 		<td><?php echo $p->price; ?></td>
 		<td><?php echo $p->quantity; ?></td>
 		<td><?php echo $p->description; ?></td>
-		<td><?php anchor('shoppingcart/buy/'.$p->$id,'Order Now'); ?></td>
+		
 	</tr>
 
 <?php
   
 }
-$template = array(
-        'table_open' => '<table border="1" cellpadding="2" cellspacing="1" class="mytable">'
-);
-$this->table->set_template($template);
+// $template = array(
+//         'table_open' => '<table border="1" cellpadding="2" cellspacing="1" class="mytable">'
+// );
+// $this->table->set_template($template);
+  
 
 ?>
 </table>
+
 </body>
 </html>

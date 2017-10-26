@@ -4,7 +4,12 @@ Class mproduct extends CI_Model{
 
 	public function findAll(){
 
-		return $this->db->get('product')->result();
+		$n=  $this->session->userdata('user_id');
+
+		//return $this->db->get('product')->result();
+		$query = $this->db->query("SELECT * FROM product WHERE id= $n");
+
+		return $query->result();
 
 	}
 
@@ -20,3 +25,5 @@ function fetch_data(){
 	return $query;	
 }
 }
+?>
+<!-- WHERE id= $n  -->

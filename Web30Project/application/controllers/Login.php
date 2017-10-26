@@ -22,7 +22,7 @@ public function LoginUser(){
                         $user_data = array(
                           'user_id'=>$result->id,
                           'fname'=>$result->fname,
-                          // 'lname'=> $result->lname,
+                          'lname'=> $result->lname,
                           'email'=>$result->email,
                           'loggedin'=>TRUE
                         );
