@@ -5,6 +5,6 @@ Class Users extends CI_Controller{
 		$this->load->view('Login.php');
 	}
 	public function Login(){
-		$this->load->view('Login.php');
+		$this->load->view('login1.php');
 	}
 }

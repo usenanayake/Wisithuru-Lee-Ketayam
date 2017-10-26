@@ -31,7 +31,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a>
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Live with carvings</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -41,10 +41,10 @@
               <a class="nav-link js-scroll-trigger" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+              <a class="nav-link js-scroll-trigger" href="#services">Shop</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+              <a class="nav-link js-scroll-trigger" href="#portfolio">Gallery</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
@@ -52,16 +52,18 @@
           </ul>
         </div>
       </div>
+      <a href="<?php echo site_url('Register/RegisterUser') ?>"><button style="margin-right: 5%">Signup</button></a>
       <a href="<?php echo site_url('Users/Login') ?>"><button style="margin-right: 5%">Login</button></a>
     </nav>
 
     <header class="masthead">
       <div class="header-content">
         <div class="header-content-inner">
-          <h1 id="homeHeading">Your Favorite Source of Free Bootstrap Themes</h1>
+          <h1 id="homeHeading">විශ්මිත ලී කැටයම්</h1>
+          <h2>Welcome To Carvings!!</h2>
           <hr>
-          <p>Start Bootstrap can help you build better websites using the Bootstrap CSS framework! Just download your template and start going, no strings attached!</p>
-          <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
+          <p>We strive to make each piece have its own character.
+The natural beauty of the wood makes that possible.</p>
         </div>
       </div>
     </header>
@@ -70,13 +72,96 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto text-center">
-            <h2 class="section-heading text-white">We've got what you need!</h2>
+            <h2 class="section-heading text-white">About Us</h2>
             <hr class="light">
-            <p class="text-faded">Start Bootstrap has everything you need to get your new website up and running in no time! All of the templates and themes on Start Bootstrap are open source, free to download, and easy to use. No strings attached!</p>
-            <a class="btn btn-default btn-xl js-scroll-trigger" href="#services">Get Started!</a>
+            
+
+
+
+
+
+
+
+
+
+
+
+
+            <button type="button" id="about" class="btn btn-primary btn-xl js-scroll-trigger"  data-toggle="modal" href="#addrow">Click Here</button>
+
+            <div class="col-lg-12 col-sm-4 col-xs-12" no-padding style="padding-top:20px">
+                    
+                     
+                    <div class="modal fade" id="addrow" role="dialog">
+                    <div class="modal-dialog">
+                    
+                      <!-- Modal content-->
+                      <div class="modal-content">
+
+
+                        <div class="modal-header">
+                          <button type="button" class="close pull-left" data-dismiss="modal">&times;</button>
+                          <h4 class="modal-title text-center">Janaka Deshappriya</h4>
+                        </div>
+
+
+                        
+                         
+                         <form method="post" >
+
+                          <div class="modal-body">
+                          <div class="row">
+                            <div class="form-group">
+                              <label for="OwnerAbout" class="col-sm-6 control-label">About</label>
+                              <div class="col-sm-8">
+                                <textarea class="form-control" id="OwnerAbout" rows="7"></textarea>
+                                <!-- <input type="text" class="form-control" id="OwnerAbout" name="ownerAboutID" required readonly> -->
+                              </div>
+                            </div>
+
+                            <div class="form-group">
+                              <label for="OwnerAchivements" class="col-sm-6 control-label">Achivements</label>
+                              <div class="col-sm-8">
+                                <input type="text" class="form-control" id="OwnerAchivements" name="ownerAchivementsID" required readonly>
+                              </div>
+                            </div>
+
+                             </div>
+
+                           
+
+                            <div class="modal-footer" >
+                                <button type="submit" class="btn btn-primary pull-left" name="OK">OK</button>
+                            </div>
+
+                          </div>                                                
+
+                        </form>
+
+                    </div>
+
+                      
+
+
+                 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
           </div>
         </div>
       </div>
+    </div>
+  </div>
     </section>
 
     <section id="services">
@@ -126,90 +211,90 @@
       <div class="container-fluid">
         <div class="row no-gutter popup-gallery">
           <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/1.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/1.jpg" alt="">
+            <a class="portfolio-box" href="<?php echo base_url()?>img/portfolio/fullsize/1.jpg">
+              <img class="img-fluid" src="<?php echo base_url()?>img/portfolio/thumbnails/1.jpg" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
-                    Category
+                    Category 1
                   </div>
                   <div class="project-name">
-                    Project Name
+                    Carving
                   </div>
                 </div>
               </div>
             </a>
           </div>
           <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/2.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/2.jpg" alt="">
+            <a class="portfolio-box" href="<?php echo base_url()?>img/portfolio/fullsize/2.jpg">
+              <img class="img-fluid" src="<?php echo base_url()?>img/portfolio/thumbnails/2.jpg" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
-                    Category
+                    Category 2
                   </div>
                   <div class="project-name">
-                    Project Name
+                    Masks
                   </div>
                 </div>
               </div>
             </a>
           </div>
           <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/3.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/3.jpg" alt="">
+            <a class="portfolio-box" href="<?php echo base_url()?>img/portfolio/fullsize/3.jpg">
+              <img class="img-fluid" src="<?php echo base_url()?>img/portfolio/thumbnails/3.jpg" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
-                    Category
+                    Category 3
                   </div>
                   <div class="project-name">
-                    Project Name
+                    Wood Carving
                   </div>
                 </div>
               </div>
             </a>
           </div>
           <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/4.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/4.jpg" alt="">
+            <a class="portfolio-box" href="<?php echo base_url()?>img/portfolio/fullsize/4.jpg">
+              <img class="img-fluid" src="<?php echo base_url()?>img/portfolio/thumbnails/4.jpg" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
-                    Category
+                    Category 4
                   </div>
                   <div class="project-name">
-                    Project Name
+                    Wood Carving
                   </div>
                 </div>
               </div>
             </a>
           </div>
           <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/5.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/5.jpg" alt="">
+            <a class="portfolio-box" href="<?php echo base_url()?>img/portfolio/fullsize/5.jpg">
+              <img class="img-fluid" src="<?php echo base_url()?>img/portfolio/thumbnails/5.jpg" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
-                    Category
+                    Ctegory 5
                   </div>
                   <div class="project-name">
-                    Project Name
+                    Mask
                   </div>
                 </div>
               </div>
             </a>
           </div>
           <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/6.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/6.jpg" alt="">
+            <a class="portfolio-box" href="<?php echo base_url()?>img/portfolio/fullsize/6.jpg">
+              <img class="img-fluid" src="<?php echo base_url()?>img/portfolio/thumbnails/6.jpg" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
-                    Category
+                    Category 6
                   </div>
                   <div class="project-name">
-                    Project Name
+                    Carving
                   </div>
                 </div>
               </div>
@@ -219,31 +304,24 @@
       </div>
     </section>
 
-    <div class="call-to-action bg-dark">
-      <div class="container text-center">
-        <h2>Free Download at Start Bootstrap!</h2>
-        <a class="btn btn-default btn-xl sr-button" href="http://startbootstrap.com/template-overviews/creative/">Download Now!</a>
-      </div>
-    </div>
-
     <section id="contact">
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto text-center">
-            <h2 class="section-heading">Let's Get In Touch!</h2>
+            <h2 class="section-heading">Contact Us</h2>
             <hr class="primary">
-            <p>Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
+            <p>Send your order, we </p>
           </div>
         </div>
         <div class="row">
           <div class="col-lg-4 ml-auto text-center">
             <i class="fa fa-phone fa-3x sr-contact"></i>
-            <p>123-456-6789</p>
+            <p>077-9954161</p>
           </div>
           <div class="col-lg-4 mr-auto text-center">
             <i class="fa fa-envelope-o fa-3x sr-contact"></i>
             <p>
-              <a href="mailto:your-email@your-domain.com">feedback@startbootstrap.com</a>
+              <a>kodithuwakku3891@gmail.com</a>
             </p>
           </div>
         </div>

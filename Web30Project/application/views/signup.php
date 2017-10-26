@@ -12,6 +12,7 @@
   <script src='http://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.4.5/js/bootstrapvalidator.min.js'></script>
 </head>
 <body>
+   
 	<div>
 		<h1><center>Signup</center></h1>
 	</div>
@@ -81,7 +82,7 @@
     </div>
     <div class="form-group">
         <div class="col-md-9 col-md-offset-3">
-            <button type="submit" class="btn btn-default">Validate</button>
+            <button type="submit" class="btn btn-default">Signup</button>
         </div>
     </div>
 </form>
@@ -172,5 +173,6 @@ $(document).ready(function() {
     });
 });
 </script>
+
 </body>
 </html>

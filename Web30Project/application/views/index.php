@@ -4,16 +4,41 @@
   <title>Shopping Cart</title>
 </head>
 <body>
-<?php
 
-$this->load->library('table');
-$this->table->set_heading('Id','Name','Price','Qty','Buy');
-foreach($listProduct as $p)
-  $this->table->add_row($p->id,$p->name,$p->price,$p->quantity,'Order now');
-$this->table->set_template(array('table_open'=>''))
-echo $this->table->generate();
+<table>
+
+<thead>
+<tr>
+<td>id</td>
+<td>name</td>
+<td>price</td>
+<td>Qty</td>
+<td>Description</td>
+<td>Buy Now</td>
+
+
+</tr>
+</thead>
+<?php
+foreach($result as $p){
+	?><tr>
+		<td><?php echo $p->id; ?></td>
+		<td><?php echo $p->name; ?></td>
+		<td><?php echo $p->price; ?></td>
+		<td><?php echo $p->quantity; ?></td>
+		<td><?php echo $p->description; ?></td>
+		<td><?php anchor('shoppingcart/buy/'.$p->$id,'Order Now'); ?></td>
+	</tr>
+
+<?php
+  
+}
+$template = array(
+        'table_open' => '<table border="1" cellpadding="2" cellspacing="1" class="mytable">'
+);
+$this->table->set_template($template);
 
 ?>
-
+</table>
 </body>
 </html>
