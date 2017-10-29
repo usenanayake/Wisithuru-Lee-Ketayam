@@ -20,6 +20,9 @@
   <!-- Navigation-->
   <?php include "includes/sidebar.php" ?>
   <div class="content-wrapper">
+    <p>Hi</p>
+
+
     
     <!-- /.container-fluid-->
     <!-- /.content-wrapper-->

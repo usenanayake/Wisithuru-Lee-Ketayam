@@ -1,11 +1,107 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Shopping Cart</title>
-</head>
-<body>
+<?php
 
-<table>
+if(!($this->session->userdata('loggedin'))){
+	redirect('Users/Login');
+}
+
+if($this->session->flashdata('wel')){
+
+	echo "<h3>".$this->session->flashdata('wel')."</h3>";
+
+}
+
+
+ ?>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Shopping Cart</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="<?php echo base_url()?>template/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="<?php echo base_url()?>template/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='<?php echo base_url()?>template/vendor/font-awesome/css/new.css' rel='stylesheet' type='text/css'>
+    <link href='<?php echo base_url()?>template/vendor/font-awesome/css/neww.css' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="<?php echo base_url()?>template/vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="<?php echo base_url()?>template/css/creative.min.css" rel="stylesheet">
+
+  </head>
+
+
+<body>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Welcome <?php echo $this->session->userdata('fname') ?> </a>
+    </div>
+    
+    <ul class="nav navbar-nav navbar-right">
+
+      <li><a href="<?php echo base_url('index.php/Login/LogoutUser'); ?>"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+ <div class="table-responsive" style="margin-top: 5%;">
+<table class="table">
+
+<thead>
+<tr>
+
+<td>name</td>
+<td>price</td>
+
+<td>Description</td>
+<td>Qty</td>
+<td>Add to cart</td>
+
+
+
+</tr>
+</thead>
+<?php
+foreach($result1 as $row){
+	?><tr>
+		
+		<td><?php echo $row->name; ?></td>
+		<td><?php echo $row->price; ?></td>
+		
+		<td><?php echo $row->description; ?></td>
+		<td><input type="text" name="email" ></td>
+		<td><button  type="submit" name="submit" style="padding:auto 50% auto 50%; background-color:#0b7df5;">Login</button></td>
+		
+	</tr>
+
+<?php
+  
+}
+
+
+?>
+
+
+</table>
+</div> 
+  
+<div class="table-responsive" style="margin-top: 5%;">
+<table class="table">
 
 <thead>
 <tr>
@@ -33,14 +129,12 @@ foreach($result as $p){
 <?php
   
 }
-// $template = array(
-//         'table_open' => '<table border="1" cellpadding="2" cellspacing="1" class="mytable">'
-// );
-// $this->table->set_template($template);
-  
+
 
 ?>
-</table>
 
+
+</table>
+</div>
 </body>
 </html>

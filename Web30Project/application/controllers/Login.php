@@ -22,14 +22,20 @@ public function LoginUser(){
                         $user_data = array(
                           'user_id'=>$result->id,
                           'fname'=>$result->fname,
-                          'lname'=> $result->lname,
+                          // 'lname'=> $result->lname,
                           'email'=>$result->email,
                           'loggedin'=>TRUE
                         );
 
                         $this->session->set_userdata($user_data);
                         $this->session->set_flashdata('wel','logged');
+
+                        $n=  $this->session->userdata('user_id');
+                        if($n ==1){
                           redirect('Admin/index');
+                        }else{
+                          redirect('product');
+                        }
                        }else{
                           $this->session->set_flashdata('errmsg','login not sucess');
                           redirect('Users');
