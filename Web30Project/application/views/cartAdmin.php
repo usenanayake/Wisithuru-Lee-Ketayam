@@ -29,20 +29,7 @@ if($this->session->flashdata('wel')){
 
 
 <!-- begin -->
-     <link id="callCss" rel="stylesheet" href="<?php echo base_url()?>template/themes/bootshop/bootstrap.min.css" media="screen"/>
-    <link href="<?php echo base_url()?>template/themes/css/base.css" rel="stylesheet" media="screen"/>
-<!-- Bootstrap style responsive --> 
-    <link href="<?php echo base_url()?>template/themes/css/bootstrap-responsive.min.css" rel="stylesheet"/>
-    <link href="<?php echo base_url()?>template/themes/css/font-awesome.css" rel="stylesheet" type="text/css">
-<!-- Google-code-prettify -->   
-    <link href="<?php echo base_url()?>template/themes/js/google-code-prettify/prettify.css" rel="stylesheet"/>
-<!-- fav and touch icons -->
-    <link rel="shortcut icon" href="<?php echo base_url()?>template/themes/images/ico/favicon.ico">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="<?php echo base_url()?>template/themes/images/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?php echo base_url()?>template/themes/images/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php echo base_url()?>template/themes/images/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="<?php echo base_url()?>template/themes/images/ico/apple-touch-icon-57-precomposed.png">
-    <style type="text/css" id="enject"></style>
+   
 
 <!-- end -->
 
@@ -85,86 +72,7 @@ if($this->session->flashdata('wel')){
 
 
 
-<!-- <div class="tab-pane  active" id="blockView">
-        <ul class="thumbnails">
 
-
-             <li class="span3">
-              <div class="thumbnail">
-                <a href="product_details.html"><img src="<?php echo base_url() ?>template/themes/images/products/3.jpg" alt=""/></a>
-                <div class="caption">
-                  <h5>Manicure &amp; Pedicure</h5>
-                  <p> 
-                    I'm a paragraph. Click here 
-                  </p>
-                   <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Add to <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">&euro;222.00</a></h4>
-                </div>
-              </div>
-            </li>
-
-
-<li class="span3">
-              <div class="thumbnail">
-                <a href="product_details.html"><img src="<?php echo base_url() ?>template/themes/images/products/3.jpg" alt=""/></a>
-                <div class="caption">
-                  <h5>Manicure &amp; Pedicure</h5>
-                  <p> 
-                    I'm a paragraph. Click here 
-                  </p>
-                   <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Add to <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">&euro;222.00</a></h4>
-                </div>
-              </div>
-            </li>
-
-
-
-            <li class="span3">
-              <div class="thumbnail">
-                <a href="product_details.html"><img src="<?php echo base_url() ?>template/themes/images/products/3.jpg" alt=""/></a>
-                <div class="caption">
-                  <h5>Manicure &amp; Pedicure</h5>
-                  <p> 
-                    I'm a paragraph. Click here 
-                  </p>
-                   <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Add to <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">&euro;222.00</a></h4>
-                </div>
-              </div>
-            </li>
-
-
-
-            <li class="span3">
-              <div class="thumbnail">
-                <a href="product_details.html"><img src="<?php echo base_url() ?>template/themes/images/products/3.jpg" alt=""/></a>
-                <div class="caption">
-                  <h5>Manicure &amp; Pedicure</h5>
-                  <p> 
-                    I'm a paragraph. Click here 
-                  </p>
-                   <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Add to <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">&euro;222.00</a></h4>
-                </div>
-              </div>
-            </li>
-
-            <li class="span3">
-              <div class="thumbnail">
-                <a href="product_details.html"><img src="<?php echo base_url() ?>template/themes/images/products/3.jpg" alt=""/></a>
-                <div class="caption">
-                  <h5>Manicure &amp; Pedicure</h5>
-                  <p> 
-                    I'm a paragraph. Click here 
-                  </p>
-                   <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Add to <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">&euro;222.00</a></h4>
-                </div>
-              </div>
-            </li>
-
-
-
-
-</ul>
-    <hr class="soft"/>
-    </div> -->
 
 
 
@@ -253,8 +161,7 @@ if($this->session->flashdata('wel')){
 </body>
 <script src="<?php echo base_url() ?>template/js/jquery.min.js"></script>
 <script src="<?php echo base_url() ?>template/js/bootstrap.min.js"></script>
-<link rel="stylesheet" href="<?php echo base_url() ?>template/themes/switch/themeswitch.css" type="text/css" media="screen" />
-<script src="<?php echo base_url() ?>template/themes/switch/theamswitcher.js" type="text/javascript" charset="utf-8"></script>
+
 <script type="text/javascript">
 
 // begin
