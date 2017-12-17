@@ -17,6 +17,37 @@ Class product extends CI_Controller
     }
 
 
+    public function additem(){
+
+        $this->load->model('mproduct');
+
+
+
+        $productId = $_POST["productId"];
+        $quantity1 = $_POST["qnty"];
+
+        $name = $_POST["name"];
+        $price =$_POST["price"];
+        $description =$_POST["description"]; 
+
+
+        $data['id'] = $this->session->userdata('user_id');
+
+        $data['quantity'] = $quantity1;
+        $data['name'] = $name;
+
+        $data['price'] = $price;
+        $data['description'] = $description;
+
+
+        
+        $this->mproduct->insertItem($data);
+
+
+
+    }
+
+
     public function ind()
     {
         $this->load->view('cartAdmin');

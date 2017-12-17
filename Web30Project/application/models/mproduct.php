@@ -26,6 +26,16 @@ Class mproduct extends CI_Model{
     }
 
 
+    public function insertItem($data){
+
+        $query = $this->db->insert("product",$data);
+
+
+
+
+    }
+
+
     function delete($id){
 
         $this->db->where('id',$id);
