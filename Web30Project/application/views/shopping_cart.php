@@ -16,7 +16,7 @@
    {
     echo '
     <div class="col-md-4" style="padding:16px; background-color:#f1f1f1; border:1px solid #ccc; margin-bottom:16px; height:400px" align="center">
-     <img src="'.base_url().'images/'.$row->product_image.'" class="img-thumbnail" /><br />
+     <img src="'.base_url().'template/img/'.$row->product_image.'" class="img-thumbnail" /><br />
      <h4>'.$row->product_name.'</h4>
      <h3 class="text-danger">$'.$row->product_price.'</h3>
      <input type="text" name="quantity" class="form-control quantity" id="'.$row->product_id.'" /><br />
