@@ -34,7 +34,7 @@ public function LoginUser(){
                         if($n ==1){
                           redirect('Admin/index');
                         }else{
-                          redirect('product');
+                          redirect('shopping_cart');
                         }
                        }else{
                           $this->session->set_flashdata('errmsg','login not sucess');

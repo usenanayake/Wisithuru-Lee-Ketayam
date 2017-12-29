@@ -52,13 +52,13 @@ class Shopping_cart extends CI_Controller {
   $this->load->library("cart");
   $output = '';
   $output .= '
-  <h3>Shopping Cart</h3><br />
+  <h3><b>Shopping Cart</b></h3><br />
   <div class="table-responsive">
    <div align="right">
-    <button type="button" id="clear_cart" class="btn btn-warning">Clear Cart</button>
+    <button type="button" id="clear_cart" class="btn btn-primary">Clear Cart</button>
    </div>
    <br />
-   <table class="table table-bordered">
+   <table class="table table-bordered table-inverse">
     <tr>
      <th width="40%">Name</th>
      <th width="15%">Quantity</th>
@@ -78,7 +78,7 @@ class Shopping_cart extends CI_Controller {
     <td>'.$items["qty"].'</td>
     <td>'.$items["price"].'</td>
     <td>'.$items["subtotal"].'</td>
-    <td><button type="button" name="remove" class="btn btn-danger btn-xs remove_inventory" id="'.$items["rowid"].'">Remove</button></td>
+    <td><button type="button" name="remove" class="btn btn-default btn-xs remove_inventory" id="'.$items["rowid"].'">Remove</button></td>
    </tr>
    ';
   }

@@ -1,26 +1,59 @@
+<?php
+
+if(!($this->session->userdata('loggedin'))){
+    redirect('Users/Login');
+}
+
+
+
+
+?>
+
+
+
 <html>
 <head>
-    <title>Codeigniter Shopping Cart with Ajax JQuery</title>
+    <title>Shopping Cart</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 </head>
+<style>
+body {
+    
+    background-color: #adad85;
+}
+</style>
 <body>
+
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#"><b style="color: red">Welcome <?php echo $this->session->userdata('fname') ?></b> </a>
+        </div>
+
+        <ul class="nav navbar-nav navbar-right">
+
+            <li><a href="<?php echo base_url().'index.php/Login/LogoutUser/'; ?>"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+        </ul>
+    </div>
+</nav>
 <div class="container">
  <br /><br />
  
- <div class="col-lg-6 col-md-6">
+ <div class="col-lg-12 col-md-12">
   <div class="table-responsive">
-   <h3 align="center">Codeigniter Shopping Cart with Ajax JQuery</h3><br />
+   <h3 align="center"><b style="color: #666600">Add Items To Your Cart</b></h3><br />
    <?php
    foreach($product as $row)
    {
     echo '
-    <div class="col-md-4" style="padding:16px; background-color:#f1f1f1; border:1px solid #ccc; margin-bottom:16px; height:400px" align="center">
+    <div class="col-md-4" style="padding:16px; background-color:#d9b18c; border:8px solid #ccc; margin-bottom:16px; height:400px" align="center">
      <img src="'.base_url().'template/img/'.$row->product_image.'" class="img-thumbnail" /><br />
-     <h4>'.$row->product_name.'</h4>
-     <h3 class="text-danger">$'.$row->product_price.'</h3>
-     <input type="text" name="quantity" class="form-control quantity" id="'.$row->product_id.'" /><br />
-     <button type="button" name="add_cart" class="btn btn-success add_cart" data-productname="'.$row->product_name.'" data-price="'.$row->product_price.'" data-productid="'.$row->product_id.'" />Add to Cart</button>
+     <h3 class="text-danger">'.$row->product_name.'</h3>
+     <h4>Rs.'.$row->product_price.'</h4>
+     
+     <input type="text" name="quantity" placeholder="Enter Quantity" class="form-control quantity" id="'.$row->product_id.'" /><br />
+     <button type="button" name="add_cart" class="btn btn-success add_cart" data-productname="'.$row->product_name.'" data-price="'.$row->product_price.'" data-productid="'.$row->product_id.'" /><span class="glyphicon glyphicon-shopping-cart"></span>Add to Cart</button>
     </div>
     ';
    }
@@ -28,9 +61,9 @@
       
   </div>
  </div>
- <div class="col-lg-6 col-md-6">
+ <div class="col-lg-12 col-md-12" >
   <div id="cart_details">
-   <h3 align="center">Cart is Empty</h3>
+   <h3 align="center"><b>Cart is Empty</b></h3>
   </div>
  </div>
  
@@ -53,7 +86,7 @@ $(document).ready(function(){
     data:{product_id:product_id, product_name:product_name, product_price:product_price, quantity:quantity},
     success:function(data)
     {
-     alert("Product Added into Cart");
+     
      $('#cart_details').html(data);
      $('#' + product_id).val('');
     }
@@ -77,7 +110,7 @@ $(document).ready(function(){
     data:{row_id:row_id},
     success:function(data)
     {
-     alert("Product removed from Cart");
+     
      $('#cart_details').html(data);
     }
    });
@@ -95,7 +128,7 @@ $(document).ready(function(){
     url:"<?php echo base_url(); ?>index.php/shopping_cart/clear",
     success:function(data)
     {
-     alert("Your cart has been clear...");
+     
      $('#cart_details').html(data);
     }
    });
